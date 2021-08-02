@@ -4,9 +4,9 @@
 int main(void) 
 {
     char c; 
-    char str[]="Hello again!"; /* quando cadeia de caracteres declarada assim:* 
+    char *str="Hello again!"; /* cadeia de caracteres declarada assim:*str 
     é implicitada como const. ver declaração sobre a falha de segmentação*/
-    char str2[]="Hello agai!"; 
+    char str2[]="Hello agai!"; // formato alterável, sem const
 
     str2[4]= 65; // alteração específica de caractere da string via ASCII code
     str[4]= 66; /* falha de segmentação, pois desejou-se alterar uma variável
