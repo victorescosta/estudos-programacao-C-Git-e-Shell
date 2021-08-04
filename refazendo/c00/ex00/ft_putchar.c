@@ -1,6 +1,6 @@
 // Escreva uma função que mostre o caractere (char) passado como parâmetro.
 // Função autorizada: write
-#include <unistd.h> // Unix standard vrs 5. Necessária para declarar a função write.
+#include <unistd.h> // Unix standard vrs 5 para declarar a função write.
 void ft_putchar(char c); // protótipo esperado
 
 int main(void) // main para validar a função
