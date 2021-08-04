@@ -6,7 +6,7 @@ void ft_putchar(char c); // protótipo esperado
 int main(void) // main para validar a função
 {
     ft_putchar('b'); // atribuição de parâmetro da função para testar saída
-    return (0); // retorno vazio, mas necessário explicitar para adequar às normas da norminette
+    return (0); // retorno vazio, necessário explicitar para norminette
 }
 
 void ft_putchar(char c) // declarando a função tipo void, com parâmetro char c.
