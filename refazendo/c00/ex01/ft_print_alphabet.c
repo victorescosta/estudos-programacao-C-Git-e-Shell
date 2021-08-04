@@ -13,18 +13,18 @@ contendo apenas a função solicitada (nesse caso, ft_print_alphabet)
 */
 
 void    ft_print_alphabet(void) // função do tipo vazio e sem parâmetros.
-{
-    char    alpha; // declaração de variável em escopo específico.
+{ // abrindo o escopo da função ft_print_alphabet
+    char    alpha; // declaração de variável no escopo local.
 
     alpha = 'a'; // atribuição do valor à variável 'alpha'. podendo ser 97. 
 /* na situação exibida, o a entre aspas simples, significa que estou querendo
 o caractere a. Como já foi declarado como tal, o mesmo poderia ser substituído
 por seu valor na tabela ascii, nesse caso o 97, sem nenhuma aspas. */
     while(alpha <= 'z') // z minúsculo na tabela ascii tem o valor de 122.
-    {
+    { // abrindo o escopo local do loop while
         write(1, &alpha, 1); // função write, como já explicada no exercício 00
 /* No exemplo acima, desejamos escrever o valor que o endereço de alpha guarda,
 que será a letra que o mesmo recebe.*/
         alpha++; //incrementador para dar finitude ao loop.
-    } // fechando o escopo específico do loop while
-}
+    } // fechando o escopo local do loop while
+} // fechando o escopo da função ft_print_alphabet
