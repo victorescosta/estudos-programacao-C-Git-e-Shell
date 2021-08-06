@@ -1,3 +1,5 @@
+/* Escreva uma função que mostre o alfabeto em minúsculo em apenas uma linha, 
+em ordem crescente, começando pela letra ’a’. */
 #include <unistd.h> // biblioteca UNIX standard, necessária para a função write
 void    ft_print_alphabet(void); // protótipo da função que será chamada
 
