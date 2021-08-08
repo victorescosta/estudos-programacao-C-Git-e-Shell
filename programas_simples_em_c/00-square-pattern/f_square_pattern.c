@@ -37,7 +37,9 @@ void f_square_pattern(int c)
 /*Interessante notar que para atribuir essa forma (e outras) é imprescindível
 declarar primeiro o while das colunas e só depois o while das linhas, uma vez 
 que o computador processa "de linha em linha", isso implica dizer que se por 
-acaso j for <= 0 (o número de colunas for <= 0), não se chegará na condição 
-onde o programa irá executar a função write (que está dentro do loop das 
+acaso i for <= 0 (o número de colunas for <= 0), não se chegará na condição 
+onde o programa irá executar a função write (dentro do loop subsequente, das 
 linhas) e encerrará a execução da função declarada pela main (f_square_pattern)
-*/
+Outro 'truque' utilizado para não haver problemas com a execução do programa
+consiste em colocar uma condicional (if, linha 20) para só rodar os loops caso
+o parâmetro passado seja um número maior ou igual a 0. */
