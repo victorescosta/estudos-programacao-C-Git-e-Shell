@@ -1,6 +1,7 @@
 /*Determine how long it takes for a population to reach a particular size.
 It can't be less than 9 at its start size.
 It can't be End size less than the start size.*/
+
 #include <cs50.h>
 #include <stdio.h>
 
