@@ -14,6 +14,6 @@ void    ft_is_negative(int n) // função esperada
 {
     if (n < 0) // utilização da condicional if, se n for < 0
         write(1, "N", 1); // escreva "N"
-    else if (n > 0 || n == '\0') // senão, se n for > 0 OU nulo '\0'
+    else if (n > 0 || n == '\0') // senão, se n for > 0 OU n for nulo ('\0')
         write(1, "P", 1); // escreva "P"
 }
